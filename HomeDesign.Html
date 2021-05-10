@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Main.css"> 
+  </head>
+  <body style="background-color:whitesmoke">
+    <header class="row sticky-top">
+        <div class="col-md-9 col-sm-12 col-xs-12 bg-dark text-white py-2">
+            <div class="row">
+              <div class="col-md-4 col-sm-3 col-xs-3"></div>  
+              <div class="col-md-6 col-sm-6 col-12">                    
+                    <div class="form-row">
+                        <div class="col-md-2 col-sm-2 col-offset-1 col-2">
+                            <i class="fa fa-3x fas fa-headphones"></i>
+                        </div>
+                        <div class="col-md-10 col-sm-10 col-9">
+                            <b>SpacePods</b> <br>
+                            <span class="text-muted">Bluetoot Kulaklık SATIŞTA</span>    
+                        </div>    
+                    </div>
+                </div>    
+                <div class="col-md-2 col-sm-2 col-xs-12 mt-1">
+                  <button style="border: 1px solid rgb(125, 126, 125); width: 100%;" 
+                    class="btn btn-dark btn-sm mx-1">Hemen İncele</button>
+                  </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12 bg-light text-center py-2">
+            <b class="text-secondary">Resmi Satış Mağzası</b> <br>
+            <b class="text-info">BASLIK 1</b>
+            <b class="text-success">BASLIK 2</b>
+            <b class="text-danger">BASLIK 3</b>
+        </div>
+    </header>
+
+    <nav class="row mt-1">
+        <div class="col-md-3 col-3" style="text-align: center;">
+            <img height="50px" width="90px" src="data:image/jpeg;base64,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" alt="Logo">
+        </div>
+        <div class="col-md-6 col-9">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Arama" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-warning" type="button" id="button-addon2">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>    
+        </div>        
+        <div class="col-md-3 col-12">
+          <div class="row row-cols-md-2">
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" style="border:1px solid black; width: 100%;"
+                        type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i> Giriş Yap
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Giriş Yap</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Favorilerim</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Hesabım</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-dark" style="width: 100%;">Sepetim 
+                <i class="fas fa-shopping-basket"></i>
+            </button>
+            </div>
+          </div>            
+        </div>
+    </nav>
+
+    <div class="navMenu">
+      <nav class="navbar navbar-light navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <diV class="navbar-nav">
+            <button class="btn btn-outline-dark h-25 mx-4 bg-white nav-link" type="button">
+              Nav Menu1 <i class="fas fa-circle text-danger"></i>
+            </button>  
+            <button class="btn btn-outline-dark h-25 mx-4 bg-white nav-link" type="button">
+              Nav Menu2 <i class="fas fa-circle text-info"></i>
+            </button>
+            <button class="btn btn-outline-dark h-25 mx-4 bg-white nav-link" type="button">
+              Nav Menu3 <i class="fas fa-circle text-secondary"></i>
+            </button>
+            <button class="btn btn-outline-dark h-25 mx-4 bg-white nav-link" type="button">
+              Nav Menu4 <i class="fas fa-circle text-dark"></i>
+            </button>
+            <button class="btn btn-outline-dark h-25 mx-4 bg-white nav-link" type="button">
+              Nav Menu5 <i class="fas fa-circle text-success"></i>
+            </button>
+            <button class="btn btn-outline-dark h-25 mx-4 bg-white nav-link" type="button">
+              Main button  <i class="fas fa-circle text-primary"></i>
+            </button>
+            <button class="btn btn-outline-dark h-25 mx-4 bg-white nav-link" type="button">
+              Nav Menu7 <i class="fas fa-circle text-warning"></i>
+            </button>  
+          </diV>
+        </div>
+      </nav>
+    </div>
+          
+
+    <section class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <!--Carousel Wrapper-->
+          <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(88).jpg"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(121).jpg"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg"
+                  alt="Third slide">
+              </div>
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+                <img src="https://mdbootstrap.com/img/Photos/Others/Carousel-thumbs/img%20(88).jpg" width="100">
+              </li>
+              <li data-target="#carousel-thumb" data-slide-to="1">
+                <img src="https://mdbootstrap.com/img/Photos/Others/Carousel-thumbs/img%20(121).jpg" width="100">
+              </li>
+              <li data-target="#carousel-thumb" data-slide-to="2">
+                <img src="https://mdbootstrap.com/img/Photos/Others/Carousel-thumbs/img%20(31).jpg" width="100">
+              </li>
+            </ol>
+          </div>
+          <!--/.Carousel Wrapper-->
+        </div>
+        <div class="col-md-3">
+        <div class="card bg-danger h-100  pt-5 borderRadius" style="color: whitesmoke;">            
+            <center>
+              <div class="col-md-12">
+                <H5>BANA NE VAR ?</H5>
+                <i class="far fa-2x fa-question-circle"></i>
+                <article style="font-size:smaller">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </article>  
+              </div>
+              <div class="row  row-cols-md-2">
+                <div class="col ml-4">
+                  <select class="custom-select  custom-select-sm" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>  
+                </div>
+                <div class="col mr-4">
+                  <select class="custom-select  custom-select-sm" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback">Example invalid custom select feedback</div>
+              </div>
+              <div class="row mx-3 mt-3">
+                  <div class="card bg-dark text-white borderRadius" style="font-size:smaller;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun
+                  </div>
+              </div>
+
+            </center>
+        </div>
+      </div>
+      </div>
+
+      <div class="row  mt-3">
+          <div class="col-md-4">
+              <div class="card bg-danger text-white radiusallcorner">
+                <div class="row">
+                    <div class="ml-5 col">
+                      <small>60 TL ve Üzeri</small>
+                      <h4>ÜCRETSİZ KARGO</h4>    
+                    </div>
+                    <div class="pt-3 col">
+                      <i class="fas fa-4x fa-truck"></i>
+                    </div>
+                </div>
+                  
+              </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card bg-primary text-white radiusallcorner">
+              <div class="row">
+                  <div class="ml-5 col">
+                    <small>NEDEN</small>
+                    <h4>MOBİL DEPOM?</h4>    
+                  </div>
+                  <div class="pt-3 col">
+                    <i class="fas fa-4x fa-question-circle"></i>
+                  </div>
+              </div>
+                
+            </div>
+          </div>          
+          
+          <div class="col-md-4">
+            <div class="card bg-success text-white radiusallcorner">
+              <div class="row">
+                  <div class="ml-5 col">
+                    <small>ÜCRETSİZ</small>
+                    <h4>İADE VE DEĞİŞİM</h4>    
+                  </div>
+                  <div class="pt-3 col">
+                    <i class="fas fa-4x fa-paper-plane"></i>
+                  </div>
+              </div>
+                
+            </div>
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                <div class="card bg-dark text-white">                  
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;"><i class="fab fa-3x fa-apple"></i></h5>
+                    <div class="card-text" style="text-align: center;">                      
+                      IPhone 12 kılıfı ve ekran <br>
+                      koruyucuları kaçırılmıyacak <br> fiyatlara
+                      <img src="https://via.placeholder.com/300x250.png?text=IPHONE" class="card-img-top" alt="...">
+                      <a href="#" class="btn btn-outline-primary w-100">
+                        <span class="float-left">Sepete Ekle</span> 
+                        <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                      </a>  
+                    </div>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block bg-secondary text-dark">                  
+                  <div class="card-body">
+                    <p class="card-text" style="text-align: center;">En Kaliteli Samsung Bataryaları Burada!</p>
+                    <h4 class="card-title" style="text-align: center;">
+                      SAMSUNG                      
+                    </h4  >
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                    <img src="https://via.placeholder.com/300x250.png?text=SAMSUNG" class="card-img-top mt-2" alt="...">
+                  </div>
+                </div>
+                <div class="card d-none d-md-block bg-warning text-dark">                  
+                  <div class="card-body">
+                    <h5 class="card-title">Em Güzel Fotorafları Sen Çekersin</h5>
+                    <img src="https://via.placeholder.com/300x250.png?text=SAMSUNG" class="card-img-top my-2" alt="...">
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block bg-primary text-white" style="height: 400px;">                  
+                  <div class="card-body">
+                    <h5 class="card-title">Oyunun Keyfini Çıkart</h5>
+                    <img src="https://via.placeholder.com/300x250.png?text=SAMSUNG" class="card-img-top my-2" alt="...">
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                <div class="card bg-dark text-white">                  
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;"><i class="fab fa-3x fa-apple"></i></h5>
+                    <div class="card-text" style="text-align: center;">                      
+                      IPhone 12 kılıfı ve ekran <br>
+                      koruyucuları kaçırılmıyacak <br> fiyatlara
+                      <img src="https://via.placeholder.com/300x250.png?text=IPHONE" class="card-img-top" alt="...">
+                      <a href="#" class="btn btn-outline-primary w-100">
+                        <span class="float-left">Sepete Ekle</span> 
+                        <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                      </a>  
+                    </div>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block bg-secondary text-dark">                  
+                  <div class="card-body">
+                    <p class="card-text" style="text-align: center;">En Kaliteli Samsung Bataryaları Burada!</p>
+                    <h4 class="card-title" style="text-align: center;">
+                      SAMSUNG                      
+                    </h4  >
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                    <img src="https://via.placeholder.com/300x250.png?text=SAMSUNG" class="card-img-top mt-2" alt="...">
+                  </div>
+                </div>
+                <div class="card d-none d-md-block bg-warning text-dark">                  
+                  <div class="card-body">
+                    <h5 class="card-title">Em Güzel Fotorafları Sen Çekersin</h5>
+                    <img src="https://via.placeholder.com/300x250.png?text=SAMSUNG" class="card-img-top my-2" alt="...">
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block bg-primary text-white" style="height: 400px;">                  
+                  <div class="card-body">
+                    <h5 class="card-title">Oyunun Keyfini Çıkart</h5>
+                    <img src="https://via.placeholder.com/300x250.png?text=SAMSUNG" class="card-img-top my-2" alt="...">
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>        
+        </div>
+      </div>
+
+    
+      <div class="row mt-5 mx-1">
+        <div class="card bg-primary text-white col-md-12 p-3 radiusallcorner">          
+          <span>
+            <i class="far fa-2x fa-check-circle"></i>
+            <b class="px-2">Türkiyenin En Büyük Mobil Aksesuar Üreticisi</b>
+          </span>
+        </div>
+      </div>
+
+      <div class="row  mt-3">
+        <div class="col-md-4">
+            <div class="card bg-white text-dark radiusallcorner">
+              <div class="row">
+                  <div class="ml-5 col">                    
+                    <small>Kargoda</small>
+                    <h4>24 SAAT İÇİNDE</h4>                                            
+                  </div>
+                  <div class="pt-2 col">
+                    <i class="far fa-4x fa-clock"></i>
+                  </div>
+              </div>
+                
+            </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-white text-dark radiusallcorner">
+            <div class="row py-2">
+                <div class="ml-5 col">                  
+                  <h4>TAKSİT İMKANI</h4>    
+                </div>
+                <div class="pt-2 col">
+                  <i class="far fa-4x  fa-credit-card"></i>
+                </div>
+            </div>
+              
+          </div>
+        </div>          
+        
+        <div class="col-md-4">
+          <div class="card bg-white text-dark radiusallcorner">
+            <div class="row py-2">
+                <div class="ml-5 col">                  
+                  <h4><b>GÜVENLİ</b> ÖDEME</h4>                      
+                </div>
+                <div class="pt-2 pb-1 col">
+                  <i class="fas fa-4x fa-shield-alt"></i>
+                </div>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 mx-1">
+        <div class="card bg-white text-dark col-md-12 radiusallcorner">                    
+          <div class="card-body p-2">
+            <span>            
+              <i class="fas fa-2x fa-flag-checkered"></i>
+              <label class="px-2" >%100 <b>YERLİ ÜRETİM</b> ÜRÜNLER<br>
+                <small>Türk Some quick example text to build on the </small>
+              </label>            
+            </span>
+            <button class="btn btn-dark float-right mt-1">Tümünü Görüntüle</button>  
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x250.png?text=AteşÖlçer" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">220.50 TL</h5>
+                    <p class="card-text">
+                      Ateş Ölçer <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=HDMI" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">35.50 TL</h5>
+                    <p class="card-text">
+                      HDMI Kablo <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=TYPE-C" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">27.50 TL</h5>
+                    <p class="card-text">
+                      TYPE-C Şarj Kablo <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=TYPE-C" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">27.50 TL</h5>
+                    <p class="card-text">
+                      TYPE-C Şarj Kablo <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <img src="https://via.placeholder.com/300x250.png?text=AteşÖlçer" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">220.50 TL</h5>
+                      <p class="card-text">
+                        Ateş Ölçer <br>
+                        <small>Some quick example text to build on the   </small>
+                      </p>
+                      <a href="#" class="btn btn-outline-dark w-100">
+                        <span class="float-left">Sepete Ekle</span> 
+                        <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://via.placeholder.com/300x250.png?text=HDMI" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">35.50 TL</h5>
+                      <p class="card-text">
+                        HDMI Kablo <br>
+                        <small>Some quick example text to build on the   </small>
+                      </p>
+                      <a href="#" class="btn btn-outline-dark w-100">
+                        <span class="float-left">Sepete Ekle</span> 
+                        <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://via.placeholder.com/300x250.png?text=TYPE-C" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">27.50 TL</h5>
+                      <p class="card-text">
+                        TYPE-C Şarj Kablo <br>
+                        <small>Some quick example text to build on the   </small>
+                      </p>
+                      <a href="#" class="btn btn-outline-dark w-100">
+                        <span class="float-left">Sepete Ekle</span> 
+                        <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://via.placeholder.com/300x250.png?text=TYPE-C" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">27.50 TL</h5>
+                      <p class="card-text">
+                        TYPE-C Şarj Kablo <br>
+                        <small>Some quick example text to build on the   </small>
+                      </p>
+                      <a href="#" class="btn btn-outline-dark w-100">
+                        <span class="float-left">Sepete Ekle</span> 
+                        <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>        
+        </div>
+      </div>
+
+      <div class="row mt-5 mx-1">
+        <div class="card bg-success text-white col-md-12 radiusallcorner">                    
+          <div class="card-body p-2">
+            <span>                          
+              <i class="fas fa-2x fa-headphones"></i>
+              <label class="px-2"> Kulaklıklar
+              </label>            
+            </span>
+            <button class="btn btn-secondary float-right mt-1">Tümünü Görüntüle</button>  
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x250.png?text=Simex" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">19.90 TL</h5>
+                    <p class="card-text">
+                      Simex Mikrofonlu Kulaklık <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=Jophus" 
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">17.60 TL</h5>
+                    <p class="card-text">
+                      Jophus Mikrofonlu Kulaklık <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=Jophus" 
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">27.50 TL</h5>
+                    <p class="card-text">
+                      Jophus Mikrofonlu Kulaklık <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=Jophus" 
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">27.50 TL</h5>
+                    <p class="card-text">
+                      Jophus Mikrofonlu Kulaklık Fantastic   <br>
+                      <small>Some quick example text to build on    </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x250.png?text=Simex" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">19.90 TL</h5>
+                    <p class="card-text">
+                      Simex Mikrofonlu Kulaklık <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=Jophus" 
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">17.60 TL</h5>
+                    <p class="card-text">
+                      Jophus Mikrofonlu Kulaklık <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=Jophus" 
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">27.50 TL</h5>
+                    <p class="card-text">
+                      Jophus Mikrofonlu Kulaklık <br>
+                      <small>Some quick example text to build on the   </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://via.placeholder.com/300x250.png?text=Jophus" 
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">27.50 TL</h5>
+                    <p class="card-text">
+                      Jophus Mikrofonlu Kulaklık Fantastic   <br>
+                      <small>Some quick example text to build on    </small>
+                    </p>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                      <span class="float-left">Sepete Ekle</span> 
+                      <i class="fas fa-shopping-basket float-right" style="font-size: 25px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="p-3">
+      <div class="row bg-dark">
+        <center class="col-md-2 text-secondary">
+          <p>Some quick example</p>
+          <p>Some quick example</p>
+          <p>Some quick example</p>
+          <p>Some quick example</p>
+          <p>Some quick example</p>
+        </center>
+        <center class="col-md-2 text-secondary">
+          <p class="text-white">Some quick example</p>
+          <p>Some quick</p>
+          <p>example</p>
+        </center>
+        <center class="col-md-2 text-secondary">
+          <p class="text-white">Some quick example</p>
+          <p>Some quick example</p>
+          <p>Some quick example</p>
+          <p>Some quick example</p>
+          <p>Some quick example</p>
+        </center>
+        <center class="col-md-3 text-white">
+          <p>Müşteri Destek Merkezi</p>
+          <i class="fas fa-8x fa-headset"></i>
+        </center>
+        <center class="col-md-3 text-secondary">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-white">Bildirimlerden Haberdar Olun</p>        
+              <i class="far fa-3x fa-envelope-open text-white"></i>
+              <p>ABONE OLUN <br>
+                <small>Some quick example Some quick example</small>
+              </p>
+              <input class="form-control form-control-sm" type="text" placeholder="email">   
+            </div>
+          </div>
+          <div class="row mt-1">        
+            <button class="btn btn-sm btn-warning radiusallcorner col-md-6">Gönder</button>
+            <small class="col-md-6">Some quick example</small>
+          </div>        
+        </center>            
+      </div>        
+      <div class="row bg-white skew p-2 ">
+        
+        <!--Instagram-->
+        <div class=" px-3" style="background-color:rgb(233, 224, 224)">
+            <i class="fab fa-instagram text-danger notskew"></i>            
+        </div>
+        <div class="px-3 ml-2 bg-danger">
+          <a href="#" class="text-white notskew" style="display: block;"><b>Depom</b></a>
+        </div>
+
+        <!--Facebook-->
+        <div class="px-3 ml-2" style="background-color:rgb(233, 224, 224)">
+            <i class="fab fa-facebook-f text-primary notskew"></i>
+        </div>
+        <div class="px-3 ml-2 bg-primary">
+          <a href="#" class="text-white notskew" style="display: block;"><b>Depom</b></a>
+        </div>
+        
+        <!--Youtube-->
+        <div class=" px-3 ml-2" style="background-color:rgb(233, 224, 224)">
+          <i class="fab fa-youtube text-danger notskew"></i>            
+        </div>
+        <div class="px-3 ml-2 bg-danger">
+          <a href="#" class="text-white notskew" style="display: block;"><b>Depom</b></a>
+        </div>    
+        
+        <small class="notskew  ml-2 ">@Copyright Some quick example Some quick example</small>
+
+        <img class="notskew ml-5" height="30px" width="30px" src="data:image/jpeg;base64,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" alt="Logo">
+      </div>
+    </footer>
+    
+  </body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+</html>
